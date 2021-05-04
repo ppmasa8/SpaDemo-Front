@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     getMsg () {
-      const url = "/api/v1/hello"
+      const url = "http://localhost:3000/api/v1/hello"
       this.$axios.get(url)
         .then((res) => {
           this.msgs = res.data
